@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20px"
+    tools:context="com.wmps.paul_mac.question2.MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ticket Booking"
+        android:id="@+id/tv1"
+        android:gravity="center_horizontal"
+        android:textSize="30dp"
+        android:paddingBottom="40px"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv2"
+        android:layout_below="@+id/tv1"
+        android:text="Destination"/>
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_below="@+id/tv2"
+        android:layout_height="40dp"
+        android:id="@+id/sp1"
+        ></Spinner>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:id="@+id/tv3"
+        android:layout_below="@+id/sp1"
+        android:text="Source"/>
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_below="@+id/tv3"
+        android:layout_height="wrap_content"
+        android:id="@+id/sp2"
+        ></Spinner>
+
+
+    <EditText android:id="@+id/changeDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sp2"
+        android:hint="Select Date of Travel"
+        android:cursorVisible="false"/>
+
+    <EditText android:id="@+id/changeTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/changeDate"
+        android:hint="Select Time of Travel"
+        android:cursorVisible="false"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/changeTime"
+        android:layout_marginTop="30px"
+        android:id="@+id/clear"
+        android:text="Clear"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:id="@+id/submit"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/changeTime"
+        android:layout_toRightOf="@+id/clear"
+        android:layout_marginTop="30px"
+        android:text="Submit"/>
+
+
+</RelativeLayout>

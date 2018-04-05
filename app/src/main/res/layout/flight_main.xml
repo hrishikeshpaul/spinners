@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20px">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Available Trains"
+        android:gravity="center_horizontal"
+        android:textSize="30dp"
+        android:id="@+id/tv1"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv1"
+        android:id="@+id/sourcetv"
+        android:hint="source"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv1"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/desttv"
+        android:hint="destination"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sourcetv"
+        android:paddingTop="20px"
+        android:id="@+id/time"
+        android:hint="time"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/desttv"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/date"
+        android:paddingTop="20px"
+        android:hint="source"/>
+
+
+    <TextView
+        android:id="@+id/gt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/toggleButton"
+        android:layout_alignBottom="@+id/toggleButton"
+        android:layout_toEndOf="@+id/sourcetv"
+        android:layout_toRightOf="@+id/sourcetv"
+        android:text="G/T" />
+
+    <ToggleButton
+        android:id="@+id/toggleButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/date"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
+        />
+
+    <ListView
+        android:layout_width="match_parent"
+        android:id="@+id/flightList"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toggleButton"
+        android:layout_marginTop="40px"
+        ></ListView>
+
+
+</RelativeLayout>
